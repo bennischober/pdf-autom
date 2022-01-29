@@ -1,13 +1,16 @@
 # ignore output files
 *.txt
 *.csv
-
-#ignore helper output
-*.json
+*.jpg
 
 # don't ignore config files
 !requirements.txt
-!config.json
+!config.ini
+
+# ignore output and input pdf/text files
+pdfs/
+OUTPUT/images/*
+OUTPUT/text/*
 
 ## Byte-compiled / optimized / DLL files
 __pycache__/
