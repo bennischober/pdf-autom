@@ -49,7 +49,7 @@ def read_images(num_images, tesseract_path, image_path, text_path):
     f = open(outfile, "a", encoding="UTF8")
 
     for i in range(1, filelimit + 1):
-        path = Path.joinpath(image_path, "page_"+str(num_images-1)+".jpg")
+        path = Path.joinpath(image_path, "page_"+str(i)+".jpg") # wrong image number! num_images-1
         text = str(((pytesseract.image_to_string(Image.open(str(path))))))
         text = text.replace('-\n', '')
         f.write(text)
