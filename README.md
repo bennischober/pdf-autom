@@ -1,5 +1,5 @@
 # pdf-autom
-A python tool to automate different tasks with pdfs.\
+A python tool to automate different tasks with pdfs.
 
 Just some ideas:
 ## Purpose
